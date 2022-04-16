@@ -11,8 +11,8 @@ class Time{
 		this.hour=t1.hour+t2.hour;
 		this.minuite=t1.minuite+t2.minuite;
 		if(this.minuite>=60){
-			this.minuite=this.minuite%60;
 			this.hour+=this.minuite/60;
+			this.minuite=this.minuite%60;
 		}
 	}
 }
